@@ -1,0 +1,4 @@
+$body hellaspatcher:textures/pokemon/1019_hydrapple/all/base/none/hydrapple.bmd
+$anim walk hellaspatcher:textures/pokemon/1019_hydrapple/all/base/none/walk.bmd
+$anim idle hellaspatcher:textures/pokemon/1019_hydrapple/all/base/none/idle.bmd
+$scale 2.0

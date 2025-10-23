@@ -1,0 +1,5 @@
+{
+  "version": "1.0.0",
+  "dependencies": ["Required", "- Forge 36.2.42+", "- Pixelmon 9.1.13+", "- HellasControl 1.0.0+", "- HellasForms 2.5.0+", "Optional:", "- HellasDeck", "- HellasElo"],
+  "features": ["- Pokemon Rebalance", "- HellasForms Move integration"]
+}
