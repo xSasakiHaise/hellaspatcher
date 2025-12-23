@@ -25,8 +25,17 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
+configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.name.toLowerCase().contains('control')) {
+            details.useTarget("${details.requested.group}:HellasControl:${details.requested.version}")
+            details.because("Normalize HellasControl artifact casing for any *control* dependency request")
+        }
+    }
+}
+
 dependencies {
-    compileOnly fg.deobf('com.github.xSasakiHaise:hellascontrol:2.0.0')
+    compileOnly fg.deobf('com.github.xSasakiHaise:HellasControl:2.0.0')
     compileOnly fg.deobf(files('libs/hellascontrol-2.0.0.jar'))
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.42'
 }
