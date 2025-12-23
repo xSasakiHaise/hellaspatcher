@@ -39,5 +39,5 @@ side="BOTH"
 modId="hellascontrol"
 mandatory=true
 versionRange="[2.0.0,)"
-ordering="NONE"
+ordering="AFTER"
 side="BOTH"
